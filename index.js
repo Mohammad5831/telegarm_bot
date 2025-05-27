@@ -3,7 +3,7 @@ const { Telegraf } = require('telegraf');
 const ytdl = require('ytdl-core');
 const BOT_TOKEN = '7771771592:AAE7UPzjuTfJnMxD1gBOoq_87QxSNa0RYmQ'
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const bot = new Telegraf(BOT_TOKEN);
 
 bot.start((ctx) => {
   ctx.reply('سلام! لینک ویدیوی یوتیوب رو بفرست تا لینک مستقیم دانلود رو برات بفرستم.');
