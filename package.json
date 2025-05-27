@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "telegraf": "^4.16.3",
-    "ytdl-core": "^4.11.5"
+    "ytdl-core": "^4.11.5",
+    "axios": "^1.6.0",
   }
 }
