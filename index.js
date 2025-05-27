@@ -1,4 +1,4 @@
-require('dotenv').config();
+
 const { Telegraf } = require('telegraf');
 const ytdl = require('ytdl-core');
 const BOT_TOKEN = '7771771592:AAE7UPzjuTfJnMxD1gBOoq_87QxSNa0RYmQ'
