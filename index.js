@@ -8,8 +8,8 @@ const bot = new Telegraf(BOT_TOKEN, { poling: true} );
 
 bot.on('message', (msg) => {
     const chatId = msg.chat.id;
-    bot.sendMessage(chatId, `سلام ${msg.from.first_name}! این یک پاسخ آزمایشی است.`);
-  bot.sendMessage(`${msg} `)
+    // bot.sendMessage(chatId, `سلام ${msg.from.first_name}! این یک پاسخ آزمایشی است.`);
+  bot.sendMessage(`test: ${msg} `)
 });
 
 console.log("ربات فعال شد!");
