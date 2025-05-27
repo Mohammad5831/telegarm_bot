@@ -4,7 +4,7 @@ const BOT_TOKEN = '7771771592:AAE7UPzjuTfJnMxD1gBOoq_87QxSNa0RYmQ'
 
 const axios = require('axios');
 const bot = new Telegraf(BOT_TOKEN, { polling: true} );
-
+const adminChatId = '5241360039',
 
 // bot.on('message', (msg) => {
 //     const chatId = msg.chat.id;
@@ -12,8 +12,15 @@ const bot = new Telegraf(BOT_TOKEN, { polling: true} );
 //   bot.sendMessage(`test: ${msg} `)
 // });
 bot.on('text', (ctx) => {
-    ctx.reply(`سلام ${ctx.message.from.first_name}! این یک پاسخ آزمایشی است.`);
-    ctx.reply(`اطلاعات : ${ctx.from}`);
+    const message = ctx.message.text;
+    const user = ctx.from;
+
+    await ctx.telegram.sendMessage(
+        adminChatId,
+        `new message from ${user} \n\n ${message}`
+    );
+    ctx.reply(`hello ${ctx.message.from.first_name} your message has been received.`);
+    // ctx.reply(`اطلاعات : ${ctx.from}`);
     console.log(ctx.message.from);
     console.log(ctx.message.chat);
     console.log(ctx.message.date);
