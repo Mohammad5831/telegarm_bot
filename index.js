@@ -1,5 +1,5 @@
 const { Telegraf } = require('telegraf');
-const bot = new Telegraf('YOUR_BOT_TOKEN');
+const bot = new Telegraf('7771771592:AAE7UPzjuTfJnMxD1gBOoq_87QxSNa0RYmQ');
 
 const adminId = '5241360039'; // آیدی عددی خودت
 
