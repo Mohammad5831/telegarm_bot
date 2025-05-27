@@ -35,7 +35,7 @@
 const { Telegraf } = require('telegraf');
 const axios = require('axios');
 
-const BOT_TOKEN = '7771771592:AAE7UPzjuTfJnMxD1gBOoq_87QxSNa0RYmQ';
+const BOT_TOKEN = '7771771592:AAHiDqkIbx8xhEauK_YcbLqVpew51kyc1Ks';
 const bot = new Telegraf(BOT_TOKEN, { polling: true });
 const adminChatId = '5241360039'; // اصلاح علامت `,` به `;`
 
