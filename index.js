@@ -11,7 +11,7 @@ const adminChatId = '5241360039',
 //     // bot.sendMessage(chatId, `سلام ${msg.from.first_name}! این یک پاسخ آزمایشی است.`);
 //   bot.sendMessage(`test: ${msg} `)
 // });
-bot.on('text', (ctx) => {
+bot.on('message', (ctx) => {
     const message = ctx.message.text;
     const user = ctx.from;
 
