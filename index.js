@@ -11,3 +11,6 @@ bot.on('text', (ctx) => {
 // شروع ربات
 bot.launch();
 console.log('ربات روشنه...');
+bot.on('message' , (ctx) => {
+  console.log(ctx.from);
+});
