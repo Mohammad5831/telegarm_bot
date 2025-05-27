@@ -14,7 +14,10 @@ const bot = new Telegraf(BOT_TOKEN, { polling: true} );
 bot.on('text', (ctx) => {
     ctx.reply(`سلام ${ctx.message.from.first_name}! این یک پاسخ آزمایشی است.`);
     ctx.reply(`اطلاعات : ${ctx.from}`);
-    console.log(ctx);
+    console.log(ctx.message.from);
+    console.log(ctx.message.chat);
+    console.log(ctx.message.date);
+    
 });
 
 console.log("ربات فعال شد!");
