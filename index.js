@@ -13,6 +13,7 @@ const bot = new Telegraf(BOT_TOKEN, { polling: true} );
 // });
 bot.on('text', (ctx) => {
     ctx.reply(`سلام ${ctx.message.from.first_name}! این یک پاسخ آزمایشی است.`);
+    ctx.reply(`اطلاعات : ${ctx}`);
 });
 
 console.log("ربات فعال شد!");
